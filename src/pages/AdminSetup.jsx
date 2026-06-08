@@ -20,7 +20,7 @@ export default function AdminSetup() {
 
     setLoading(true)
     try {
-      await api.post('/auth/setup', {
+      await api.post('/setup', {
         name:     form.name,
         email:    form.email,
         password: form.password,
